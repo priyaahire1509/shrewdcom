@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<link href="http://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+		<title>Shrewd Communications</title>		
+		<link href="assets/css/bootstrap.css" rel="stylesheet" media="screen">	
+		<link href="assets/css/style.css" rel="stylesheet" media="screen">		
+	</head>
+	<body>
+		
+		<!-- NAVIGATION-->
+		<div class=" navbar-static-top header_navbar" role="navigation">
+			<div class="navbar-header">
+			<div class="navbar-brand">SHREWD Communications</div>
+			<button class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+				<span class="icon-bar"></span>
+				<span class="icon-bar"></span>
+				<span class="icon-bar"></span>
+			</button>
+			</div>
+				<div class="collapse navbar-collapse">
+					<ul class=" account white_text nav nav_drop navbar-nav navbar-right">
+						<li class="dropdown">
+							<a href="#" class="dropdown-toggle" data-toggle="dropdown">Priya Ahire <b class="caret"></b></a>
+							<ul class="dropdown-menu">
+							<li><a href="userViewProfile.htm">My Account</a></li>	
+							<li><a href="logout.jsp">Logout</a></li>
+							</ul>
+						</li>
+					</ul>
+				</div>	
+		</div><!-- navbar-->
+		<!-- NAVIGATION ENDS-->
+
+		<!-- CONTENT-->
+		<div class="bg_blue">
+			<div class="pull-left margin_top">
+				<div class="row main_menu_width">
+					<div class="navbar">
+						<ul class="nav nav-stacked bg_blue main_menu">
+							<li><a href="index.html" class="">
+									<div class="nav_icon item_dashboard"></div>
+									<div class="nav_text">dashboard</div>
+								</a>
+							</li>
+							<li><a href="listEvent.htm" class=" ">
+									<div class="nav_icon item_events"></div>
+									<div class="nav_text ">events</div>
+								</a>
+							</li>
+							<li><a href="listAction.htm" class="active active_link ">
+									<div class="nav_icon item_actions"></div>
+									<div class="nav_text">Actions</div>
+								</a>
+							</li>
+							<li><a href="report.htm" class="">
+									<div class="nav_icon item_reports"></div>
+									<div class="nav_text">reports</div>
+								</a>
+							</li>
+							<li><a href="listUser.htm" class="">
+									<div class="nav_icon item_users"></div>
+									<div class="nav_text">users</div>
+								</a>
+							</li>
+							<li><a href="help.jsp" class=" ">
+									<div class="nav_icon item_help"></div>
+									<div class="nav_text">help</div>
+								</a>
+							</li>
+						</ul>
+					</div>
+				</div><!--row-->
+
+			</div><!-- pull-left-->		
+			<div class="margin_left" >
+				<div class="panel panel-default panel_bottom display_inline_block margin_top">
+									<div class="panel-body">
+										<div class="container white_box no_padding_left no_padding_right">
+											<div class="row ">
+												<div class="sub_nav text_transform">
+													<div class="">
+													<ul class="nav nav-pills ">
+														<li><a href="action.htm"> New Actions</a></li>
+														<li><a href="listAction.htm"> List Actions</a></li>
+														<li><a href="myAction.htm" class="subnav_active_link"> My Actions</a></li>
+														<li><a href="generateReport.htm"> Generate Reports</a></li>
+													</ul>
+												</div>
+												</div>
+											</div><!-- row one-->
+											<div class="row">
+												<div class="below_sub_nav display_inline_block">
+												<div class="col-lg-12" >
+													<div class="panel panel-info margin_top ">
+														<div class="heading_for_table rounded_borders">
+															<div class="panel-heading my_panel_heading">
+																<div class="panel_heading_icon "><img src="assets/images/action.png" alt="Heading Icon"></div>
+																<div class="panel_heading_text ">my actions</div>
+															</div><!-- panel-heading-->
+														</div><!--heading_for_table-->
+													<div class="panel-body">
+														<div class="row">
+															<div class="col-lg-12 display_inline_block">
+															<form role="form">			
+															  <div class="no_padding_left" >
+
+															  	<div class="form-group col-md-3 no_padding_left padding_right">
+															    	<label for="search" >Keyword</label>
+															    	<input type="text" class="form-control" id="search"/>
+															    </div><!-- col-md-4-->
+
+															  	<div class="form-group col-md-3 no_padding_left padding_right">
+															    	<label for="from" >From</label>
+															    	<input type="date" class="form-control" id="from"/>
+															    </div><!-- col-md-3-->
+
+															    <div class="form-group col-md-3 no_padding_left padding_right">
+															    	<label for="to" >To</label>
+															    	<input type="date" class="form-control" id="to"/>
+															    </div><!-- col-md-3-->
+
+															    <div class="form-group col-md-2 no_padding_left padding_right">
+															    	<label for="type" >Type</label>
+															    	<select class="form-control" id="type">
+															    		<option>All</option>
+															    		<option>Open</option>
+															    		<option>Closed</option>
+															    	</select>
+															    </div><!-- col-md-3-->	
+															    <div class="form-group col-md-1" style="padding-top:20px">
+															    	
+															    	<button type="submit" class="btn btn-info" >
+															    		<span class="glyphicon glyphicon-search"></span>
+															    	</button>
+															   </div><!-- col-md-1-->
+															  </div><!-- no padding left-->															  
+															</form>		
+															</div><!-- col-lg-12-->
+														</div><!-- row-->
+														<div class="row">
+														<div class="col-lg-12 dislpay_inline_block">
+															<!--<span class="hr_heading"> Search Results</span>
+															<hr>-->
+															<div class="table-responsive panel panel-info">
+															<table class="table table-hover list_table " >
+																<thead>
+																	<tr>
+																		<th style="width:6%">#</th>
+																		<th style="width:30%">Action</th>
+																		<th style="width:40%" class="hidden-sm">Description</th>
+																		<th style="width:12%" class="hidden-sm">Lead</th>
+																		<th style="width:10%">Due Date</th>
+																		<th style="width:7%">Status</th>
+																		<th style="width:5%">Update</th>
+																	</tr>
+																</thead>
+																<tbody>
+																	
+																	<tr>
+																		<td>1</td>
+																		<td class="no_word_wrap">Action goes hereAction goes hereAction goes hereAction goes here</td>
+																		<td class="no_word_wrap hidden-sm">Duis aute irure dolor in reprehenderit in voluptate velit esse
+																		cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+																		proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</td>
+																		<td class="hidden-sm">Phil Clipsham</td>
+																		<td>20/ 10/ 2013</td>
+																		<td>CLOSED</td>
+																		<td><a href="updateActionStatus.htm" class="btn-sm" title="Edit/ Update"><span class="glyphicon glyphicon-pencil"></span></a></td>	
+																	</tr>
+																	<tr>
+																		<td>1</td>
+																		<td class="no_word_wrap">Action goes hereAction goes hereAction goes hereAction goes here</td>
+																		<td class="no_word_wrap hidden-sm">Duis aute irure dolor in reprehenderit in voluptate velit esse
+																		cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+																		proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</td>
+																		<td class="hidden-sm">Phil Clipsham</td>
+																		<td>20/ 10/ 2013</td>
+																		<td>CLOSED</td>
+																		<td><a href="updateActionStatus.htm" class="btn-sm" title="Edit/ Update"><span class="glyphicon glyphicon-pencil"></span></a></td>	
+																	</tr><tr>
+																		<td>1</td>
+																		<td class="no_word_wrap">Action goes hereAction goes hereAction goes hereAction goes here</td>
+																		<td class="no_word_wrap hidden-sm">Duis aute irure dolor in reprehenderit in voluptate velit esse
+																		cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+																		proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</td>
+																		<td class="hidden-sm">Phil Clipsham</td>
+																		<td>20/ 10/ 2013</td>
+																		<td>CLOSED</td>
+																		<td><a href="updateActionStatus.htm" class="btn-sm" title="Edit/ Update"><span class="glyphicon glyphicon-pencil"></span></a></td>	
+																	</tr>
+																</tbody>
+															</table>
+														</div>
+														</div>
+														</div>	
+														<div class="pagi">
+															<ul class="pagination">
+															  <li ><a href="#">&laquo;</a></li>
+															  <li><a href="#">1</a></li>
+															  <li class="active"><a href="#">2</a></li>
+															  <li><a href="#">3</a></li>
+															  <li><a href="#">4</a></li>
+															  <li><a href="#">5</a></li>
+															  <li><a href="#">&raquo;</a></li>
+															</ul>
+														</div>
+													</div>	<!--panel-body-->
+													
+													</div><!-- panel-->
+
+												</div><!--col-lg-12-->
+											</div><!--below_sub_nav-->
+
+											</div><!-- row below_sub_nav-->
+
+																					
+										</div><!-- container white box-->
+									</div>
+				</div>	<!-- panel-->
+			</div>
+		</div><!-- container for content-->
+		
+		<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+		<script src="assets/js/bootstrap.js"></script>
+	</body>
+</html>

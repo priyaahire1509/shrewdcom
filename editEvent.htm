@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<link href="http://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+	<title>Shrewd Communications</title>		
+	<link href="assets/css/bootstrap.css" rel="stylesheet" media="screen">	
+	<link href="assets/css/style.css" rel="stylesheet" media="screen">		
+</head>
+<body>
+
+	<!-- NAVIGATION-->
+	<div class=" navbar-static-top header_navbar" role="navigation">
+		<div class="navbar-header">
+			<div class="navbar-brand">SHREWD Communications</div>
+			<button class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+				<span class="icon-bar"></span>
+				<span class="icon-bar"></span>
+				<span class="icon-bar"></span>
+			</button>
+		</div>
+		<div class="collapse navbar-collapse">
+			<ul class=" account white_text nav nav_drop navbar-nav navbar-right">
+				<li class="dropdown">
+					<a href="#" class="dropdown-toggle" data-toggle="dropdown">Priya Ahire <b class="caret"></b></a>
+					<ul class="dropdown-menu">
+						<li><a href="#">My Account</a></li>	
+						<li><a href="#">Logout</a></li>
+					</ul>
+				</li>
+			</ul>
+		</div>	
+	</div><!-- navbar-->
+	<!-- NAVIGATION ENDS-->
+
+	<!-- CONTENT-->
+	<div class=" bg_blue">
+		<div class="pull-left margin_top">
+			<div class="row main_menu_width">
+				<div class="navbar">
+					<ul class="nav nav-stacked bg_blue main_menu">
+						<li>
+							<a href="index.html" class="">
+								<div class="nav_icon item_dashboard"></div>
+								<div class="nav_text">dashboard</div>
+							</a>
+						</li>
+						<li>
+							<a href="listEvent.htm" class="active active_link">
+								<div class="nav_icon item_events"></div>
+								<div class="nav_text ">events</div>
+							</a>
+						</li>
+						<li>
+							<a href="listAction.htm" >
+								<div class="nav_icon item_actions"></div>
+								<div class="nav_text">Actions</div>
+							</a>
+						</li>
+						<li>
+							<a href="report.htm" class="">
+								<div class="nav_icon item_reports"></div>
+								<div class="nav_text">reports</div>
+							</a>
+						</li>
+						<li>
+							<a href="listUser.htm" >
+								<div class="nav_icon item_users"></div>
+								<div class="nav_text">users</div>
+							</a>
+						</li>
+						<li>
+							<a href="help.jsp" class=" ">
+								<div class="nav_icon item_help"></div>
+								<div class="nav_text">help</div>
+							</a>
+						</li>
+					</ul>
+				</div>
+			</div><!--row-->
+
+		</div><!-- pull-left-->	
+		<div class="margin_left" >
+			<div class="panel panel-default panel_bottom display_inline_block margin_top">
+				<div class="panel-body">
+					<div class="container white_box no_padding_left no_padding_right">
+						<div class="row">
+							<div class="sub_nav text_transform">
+								<div class="clearfix">
+									<ul class="nav nav-pills pull-left">
+										<li><a href="createEvent.htm"> New Events</a></li>
+										<li><a href="listEvent.htm" class="subnav_active_link"> List Events</a></li>
+										<li><a href="myEvent.htm"> My Events</a></li>
+
+									</ul>
+									<ol class="breadcrumb pull-right">
+										<li><a href="index.html">Dashboard</a></li>
+										<li><a href="listEvent.htm">List Events</a></li>
+										<li>Edit Event</li>
+									</ol>
+								</div>
+							</div>
+						</div><!-- row one-->
+						<div class="row">
+							<div class="below_sub_nav display_inline_block">
+								<div class="col-lg-10 col-lg-offset-1" >
+									<div class="panel panel-info margin_top ">
+										<div class="heading_for_table rounded_borders">
+											<div class="panel-heading my_panel_heading">
+												<div class="panel_heading_icon "><img src="assets/images/action.png" alt="Heading Icon"></div>
+												<div class="panel_heading_text ">Edit Event</div>
+											</div><!-- panel-heading-->
+										</div><!--heading_for_table-->
+										<div class="panel-body">
+											<form>
+												<div class="row">
+													<div class="col-md-8 col-md-offset-2">
+														<div class="panel panel-default">
+															<div class="panel-body no_padding_bottom">
+																<div class="hr_heading">Event Details</div><hr>
+																<div class="form-group col-md-6 no_padding_left padding_right">
+																	<label for="subject" >Subject</label>
+																	<input type="text" class="form-control" id="subject" placeholder="Subject" >
+																</div><!-- col-md-6-->
+
+																<div class="form-group col-md-6 no_padding_right padding_left" >
+																	<label for="venue" >Venue</label>
+																	<input type="text" class="form-control" id="venue" placeholder="Venue" >
+																</div><!-- col-md-6-->
+
+																<div class="form-group col-md-6 no_padding_left padding_right">
+																	<label for="startdate" >Start Date</label>
+																	<input type="date" class="form-control" id="startdate"/>
+																</div><!-- col-md-6-->
+
+																<div class="form-group col-md-6 no_padding_right padding_left" >
+																	<label for="enddate" >End Date</label>
+																	<input type="date" class="form-control" id="enddate"/>
+																</div><!-- col-md-6-->
+
+																<div class="form-group col-md-12  no_padding_left padding_right">
+																	<div class="col-md-6 no_padding_left padding_right" id="fileContainer">
+																		<label for="file" >Upload file(s)</label>
+																		<input type="file" class="form-control " id="file"/>
+																	</div>
+
+
+																	<div class="no_padding_right padding_left">
+																		<input id="noDocuments" name="noDocuments" type="hidden" value="1">
+																		<label style="padding-bottom:8px ;opacity:0" >Attach More</label>
+																		<div>
+																			<a href="javascript:addFileUpload();" style="padding-left:13px">
+																			<span class="glyphicon glyphicon-paperclip"></span>Add More Documents
+																		</a>
+																		</div>
+																	</div>
+																</div><!-- col-md-12-->
+																	<div class="clearfix"></div>
+																	<div class="padding_top no_padding_left" >
+																	<label class="col-md-3 no_padding_left " >Existing Attachments</label>
+																	<p class="col-md-8 no_box_shadow " id="existingdocs" style="border:none">N/ A</p>
+																</div><!-- col-md-6-->
+																
+															</div>
+														</div>
+													</div>
+													<div class="clearfix"></div>
+													<!-- block two-->
+													<div class="col-md-12">
+														<div class="panel panel-default">
+															<div class="panel-body">
+															<div class="hr_heading">Existing Agenda</div><hr>
+																<div class="table-responsive">
+																	<table class="table table-hover table_detail">
+																		<thead>
+																			<tr>
+																				<th style="width:5%">Id.</th>
+																				<th style="width:16%">Agenda </th>
+																				<th style="width:45%" >Description</th>
+																				<th style="width:10%" >Added By</th>
+																				<th style="width:4%">Edit</th>
+																				<th style="width:4%">Delete</th>
+																			</tr>
+																		</thead>
+																		<tbody>
+																			<tr>
+																				<td>1</td>
+																				<td class="no_word_wrap">Kent & Medway Commissioning Services</td>
+																				<td class="no_word_wrap">
+																					Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+																					tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+																					quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+																					consequa.
+																				</td>
+																				<td>Ahire</td>
+																				<td>
+																					<a href="agendaItemEdit.htm" class="btn-sm">
+																						<span class="glyphicon glyphicon-pencil"></span>
+																					</a>
+																				</td>
+																				<td>
+																					<a href="" onclick="deleteAgendaPopup('0')" class="btn-sm">
+																						<span class="glyphicon glyphicon-trash"></span>
+																					</a>
+																				</td>	
+																			</tr>
+																		</tbody>
+																	</table>
+																	<a href="newAgenda.htm" data-toggle="modal" data-target="#myDefaultModal" class="btn btn-info btn-sm pull-right">
+																		<span class="glyphicon glyphicon-plus"></span>Add New Item
+																	</a>
+																	<div class="clearfix"></div>
+																</div>
+															</div>
+														</div>
+													</div>
+
+														<div class="col-md-12">
+															<div class="panel">
+															<div class="form-horizonatal">
+																<div class="form-group">
+																	<label class="">Comment</label>
+																	<textarea class="form-control"></textarea>
+																</div>
+															</div>
+														</div>
+														</div>		
+												</div><!--row-->
+												<div class="col-md-5 col-md-offset-5">
+													<button type="submit" class="btn btn-info">Submit</button>
+													<button type="button" class="btn btn-info">Back</button>
+												</div>
+											</form>
+										</div><!--panel-body-->
+									</div><!-- panel panel-info margin_top-->
+								</div><!-- col-lg-12-->
+							</div><!--below_sub_nav display_inline_block-->
+						</div>	<!-- row-->
+					</div>
+				</div><!-- container for content-->
+			</div>
+		</div>
+	</div>
+<!-- Modal -->
+	<div class="modal fade" id="myDefaultModal" tabindex="-1" role="dialog" aria-hidden="true">
+		<div class="modal-dialog">
+			<div class="modal-content">
+				<div class="modal-header">
+					<button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+					<h4 class="modal-title">Modal title</h4>
+
+				</div>
+				<div class="modal-body"><div class="te">Remote file cannot be fetched.</div></div>
+				<div class="modal-footer">
+					<button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+					<button type="button" class="btn btn-primary">Save changes</button>
+				</div>
+			</div>
+			<!-- /.modal-content -->
+		</div>
+		<!-- /.modal-dialog -->
+	</div>
+	<!-- /.modal -->
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+	<script src="assets/js/bootstrap.js"></script>
+	<script type="text/javascript">
+
+	function addFileUpload() {
+		$("#fileContainer").append('<input type="file" class="form-control " id="file"/>');
+	}
+	</script>
+	</body>
+</html>

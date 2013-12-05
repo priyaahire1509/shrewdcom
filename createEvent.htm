@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<link href="http://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+	<title>Shrewd Communications</title>		
+	<link href="assets/css/bootstrap.css" rel="stylesheet" media="screen">	
+	<link href="assets/css/style.css" rel="stylesheet" media="screen">		
+	<style type="text/css">
+	.test { display: inline-block;}
+	</style>
+</head>
+<body>		
+	<!-- NAVIGATION-->
+	<div class=" navbar-static-top header_navbar" role="navigation">
+		<div class="navbar-header">
+			<div class="navbar-brand">SHREWD Communications</div>
+			<button class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+				<span class="icon-bar"></span>
+				<span class="icon-bar"></span>
+				<span class="icon-bar"></span>
+			</button>
+		</div>
+		<div class="collapse navbar-collapse">
+			<ul class=" account white_text nav nav_drop navbar-nav navbar-right">
+				<li class="dropdown">
+					<a href="#" class="dropdown-toggle" data-toggle="dropdown">Priya Ahire <b class="caret"></b></a>
+					<ul class="dropdown-menu">
+						<li><a href="#">My Account</a></li>	
+						<li><a href="#">Logout</a></li>
+					</ul>
+				</li>
+			</ul>
+		</div>	
+	</div><!-- navbar-->
+	<!-- NAVIGATION ENDS-->
+
+	<!-- CONTENT-->
+	<div class=" bg_blue">
+		<div class="pull-left margin_top">
+			<div class="row main_menu_width">
+				<div class="navbar">
+					<ul class="nav nav-stacked bg_blue main_menu">
+						<li><a href="index.html" class="">
+							<div class="nav_icon item_dashboard"></div>
+							<div class="nav_text">dashboard</div>
+						</a>
+					</li>
+					<li><a href="listEvent.htm" class="active active_link ">
+						<div class="nav_icon item_events"></div>
+						<div class="nav_text ">events</div>
+					</a>
+				</li>
+				<li><a href="listAction.htm">
+					<div class="nav_icon item_actions"></div>
+					<div class="nav_text">Actions</div>
+				</a>
+			</li>
+			<li><a href="report.htm" class="">
+				<div class="nav_icon item_reports"></div>
+				<div class="nav_text">reports</div>
+			</a>
+		</li>
+		<li><a href="listUser.htm" class="">
+			<div class="nav_icon item_users"></div>
+			<div class="nav_text">users</div>
+		</a>
+	</li>
+	<li><a href="help.jsp" class=" ">
+		<div class="nav_icon item_help"></div>
+		<div class="nav_text">help</div>
+	</a>
+</li>
+</ul>
+</div>
+</div><!--row-->
+
+</div><!-- pull-left-->	
+<div class="margin_left" >
+	<div class="panel panel-default panel_bottom display_inline_block margin_top">
+		<div class="panel-body">
+			<div class="container white_box no_padding_left no_padding_right">
+				<div class="row">
+					<div class="sub_nav text_transform">
+						<div class="">
+							<ul class="nav nav-pills ">
+								<li><a href="createEvent.htm" class="subnav_active_link"> New Events</a></li>
+								<li><a href="listEvent.htm" > List Events</a></li>
+								<li><a href="myEvent.htm"> My Events</a></li>
+							</ul>
+						</div>
+					</div>
+				</div><!-- row one-->
+				<div class="row">
+					<div class="below_sub_nav display_inline_block">
+						<div class="col-lg-10 col-lg-offset-1" >
+							<div class="panel panel-info margin_top ">
+								<div class="heading_for_table rounded_borders">
+									<div class="panel-heading my_panel_heading">
+										<div class="panel_heading_icon "><img src="assets/images/action.png" alt="Heading Icon"></div>
+										<div class="panel_heading_text ">create new Event</div>
+									</div><!-- panel-heading-->
+								</div><!--heading_for_table-->
+								<div class="panel-body">
+									<div class="col-md-10 col-md-offset-1">
+										<form role="form">
+
+											<div class="form-group">
+												<label for="subject">Subject</label>
+												<input type="text" class="form-control" id="subject" placeholder="Subject">
+											</div>
+
+
+											<div class="form-group col-md-6 no_padding_left padding_right">
+												<label for="venue" >Venue</label>
+												<input type="text" class="form-control" id="venue" placeholder="Venue">
+											</div><!-- col-md-6-->
+
+											<div class="form-group col-md-5  padding_left">
+												<label for="type" >Type</label>
+												<select class="form-control" id="type">
+													<option>Weekly Team Meerting</option>
+													<option>Press Conference</option>
+													<option>Board Meeting</option>
+													<option>Review Meet</option>
+												</select>
+											</div><!-- col-md-6-->
+											<div class="form-group col-md-1 no_padding_left ">
+												<label for="" style="opacity:0;padding-bottom:2px" >new </label>
+												<a data-toggle="modal" data-target="#myDefaultModal" href="eventType.htm" style="" class="btn btn-sm btn-info"><span class="glyphicon glyphicon-plus"></span> New</a>
+											</div>
+
+
+											<div class="form-group col-md-6 no_padding_left padding_right" >
+												<label for="mode" >Mode</label>
+												<select class="form-control" id="mode">
+													<option>Telecoference</option>
+													<option>Skpye</option>
+													<option>Face-to-face</option>
+												</select>
+											</div><!-- col-md-6-->
+
+
+
+											<div class="form-group col-md-6 no_padding_right padding_left" >
+												<label for="mode" class="">Is this a series of events?</label>
+												<div class="form-control" style="border:none;">
+													<input type="radio" id="inlineCheckbox1" value="option1" class="padding_right1 test"> Yes &nbsp;&nbsp; &nbsp;
+													<input type="radio" id="inlineCheckbox1" value="option1" class="padding_right1 test"> No
+												</div>
+											</div><!-- col-md-6-->
+
+											<div class="form-group col-md-6 no_padding_left padding_right">
+												<label for="recorder" >Recorder</label>
+												<select class="form-control" id="recorder">
+													<option>Vani</option>
+													<option>Karan M</option>
+													<option>Pete Breathwick</option>
+													<option>Phil Clipsham</option>
+												</select>
+											</div><!-- col-md-6-->
+											<div class="form-group col-md-6 no_padding_left padding_left">
+												<label for="convernoe" >Convenor</label>
+												<select class="form-control" id="convenor">
+													<option>Vani</option>
+													<option>Karan M</option>
+													<option>Pete Breathwick</option>
+													<option>Phil Clipsham</option>
+												</select>
+											</div><!-- col-md-6-->
+
+
+
+											<div class="form-group col-md-6 no_padding_left padding_right">
+												<label for="startdate" >Start Date</label>
+												<input type="date" class="form-control" id="startdate"/>
+											</div><!-- col-md-6-->
+											<div class="form-group col-md-6 no_padding_right padding_left" >
+												<label for="enddate" >End Date</label>
+												<input type="date" class="form-control" id="enddate"/>
+											</div><!-- col-md-6-->
+
+
+
+											<div class="form-group col-md-6 no_padding_left padding_right">
+												<label for="duedate" >Due Date</label>
+												<input type="date" class="form-control" id="duedate"/>
+											</div><!-- col-md-6-->
+											<div class="form-group col-md-6 no_padding_right padding_left" >
+
+												<div class="col-md-7 no_padding_left no_padding_right" id="fileContainer">
+													<label for="file" >Upload file(s)</label>
+													<input type="file" class="form-control " id="file"/>
+												</div>
+
+
+												<div class="no_padding_right ">
+													<input id="noDocuments" name="noDocuments" type="hidden" value="1">
+													<label style="padding-bottom:8px ;opacity:0" >Attach More</label>
+													<div>
+														<a href="javascript:addFileUpload();" style="padding-left:13px">
+															<span class="glyphicon glyphicon-paperclip"></span>Add More Documents
+														</a>
+													</div>
+												</div>
+											</div><!-- col-md-6-->
+											<div class="col-md-11"></div>
+											<div class="col-md-8 col-md-offset-5">
+												<button type="submit" class="btn btn-info">Submit</button>
+
+
+											</div>
+										</form>
+									</div>
+								</div>	<!--panel-body-->
+							</div><!-- panel-->
+						</div><!--col-md-12-->
+					</div><!--col-md-12-->
+				</div><!-- row first-->
+				<!-- row two-->
+			</div><!-- container white box-->
+		</div>
+	</div>	<!-- panel-->
+</div>
+</div><!-- container for content-->
+<div class="modal fade" id="myDefaultModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+	<div class="modal-dialog">
+		<div class="modal-content">
+			<div class="modal-header">
+				<button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+				<h4 class="modal-title">Modal title</h4>
+
+			</div>
+			<div class="modal-body"><div class="te">Remote file cannot be fetched.</div></div>
+			<div class="modal-footer">
+				<button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+				<button type="button" class="btn btn-primary">Save changes</button>
+			</div>
+		</div>
+		<!-- /.modal-content -->
+	</div>
+	<!-- /.modal-dialog -->
+</div>
+<!-- /.modal -->
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+<script src="assets/js/bootstrap.js"></script>
+<script type="text/javascript">
+
+function addFileUpload() {
+	$("#fileContainer").append('<input type="file" class="form-control " id="file"/>');
+}
+</script>
+</body>
+</html>
